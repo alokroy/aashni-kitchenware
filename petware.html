@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Aashni Kitchenware | Petware</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 360px;
+            height: 300px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            margin-bottom: 30px;
+        }
+
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background-color: white;
+            color: black;
+        }
+
+        .flip-box-back {
+            background-color: lemonchiffon;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+
+        .flip-box1 {
+            background-color: transparent;
+            width: 360px;
+            height: 300px;
+            border: 1px solid #f1f1f1;
+            perspective: 1300px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+
+        }
+
+
+        .flip-box-inner1 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+
+        }
+
+        .flip-box1:hover .flip-box-inner1 {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front1,
+        .flip-box-back1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front1 {
+            background-color: white;
+            color: black;
+        }
+
+        .flip-box-back1 {
+            background-color: lemonchiffon;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: cornsilk;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 1px;
+            max-width: 20%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+<!-- body -->
+
+<body class="main-layout about_pape">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header class="section">
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li> <a href="index.html">Home</a> </li>
+                                        <li> <a href="about.html">About</a> </li>
+                                        <li><a href="products.html">Products</a> </li>
+                                        <div class="dropdown">
+                                            <button onclick="myFunction()" class="dropbtn"
+                                                style="color: black; font-size: 20px; font-weight: 500; font-family: 'Roboto'; margin-bottom: 20px; ">Categories</button>
+                                            <div id="myDropdown" class="dropdown-content">
+                                                <a href="mixing.html">Mixing Bowl</a>
+                                                <a href="colander.html">Colander & Strainers</a>
+                                                <a href="trey.html">Trey & Platter</a>
+                                                <a href="petware.html">Petware</a>
+                                                <a href="storage.html">Storage</a>
+                                                <a href="barware.html">Barware</a>
+                                                <a href="cookware.html">Cookware & kitchen accessories</a>
+                                            </div>
+                                        </div>
+                                        <li><a href="clients.html">Amazon Products</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="last"><a href="products.html"><img src="images/search_icon.png"
+                                                    alt="icon" /></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end header inner -->
+    </header>
+    <!-- end header -->
+    <!--about -->
+    <!--end about -->
+    <section>
+        <div id="main_slider" class="section carousel slide banner-main" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main_slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main_slider" data-slide-to="1"></li>
+                <li data-target="#main_slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row marginii">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="carousel-caption ">
+                                    <h1>Welcome to <strong class="color">Aashni Kitchenware</strong></h1>
+                                    <p style="color:Black;">Think Better Kitchen</p>
+                                    <a class="btn btn-lg btn-primary" href="products.html" role="button">Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="img-box " style="margin-top: 70px; max-width: 500px; max-height: 700px;">
+                                    <figure><img src="images/AKW_082_1_-removebg-preview.png" alt="img" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row marginii">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="carousel-caption ">
+                                    <h1>Welcome to <strong class="color">Aashni Kitchenware</strong></h1>
+                                    <p style="color:Black;">Think Better Kitchen</p>
+                                    <a class="btn btn-lg btn-primary" href="products.html" role="button">Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="img-box " style="margin-top: 70px; max-width: 300px; max-height: 300px;">
+                                    <figure><img src="images/AKW_099-removebg-preview.png" alt="img" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row marginii">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="carousel-caption ">
+                                    <h1>Welcome to <strong class="color">Aashni Kitchenware</strong></h1>
+                                    <p style="color:Black;">Think Better Kitchen</p>
+                                    <a class="btn btn-lg btn-primary" href="products.html" role="button">Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="img-box" style="margin-top: 70px; max-width: 300px; max-height: 300px;">
+                                    <figure><img src="images/AKW_098-removebg-preview.png" alt="img" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                <i class='fa fa-angle-left'></i></a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                <i class='fa fa-angle-right'></i>
+            </a>
+        </div>
+    </section>
+    <div id="plant" class="section  product" style="margin-top: 1px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="titlepage">
+                        <h2><strong class="black"> Petware</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="clothes_main section " style="background-color: white;">
+                <div class="container">
+                    <div class="row">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img src="images/AKW 081.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                    <h1 style="color: black;"><b> BROAD RIM EMBOSSED PET BOWL</b></h1>
+                                    <h2 style="color: blueviolet;"><b>AKW-081</b></h2>
+                                </div>
+                                <div class="flip-box-back">
+                                    <h2><b>BROAD RIM EMBOSSED PET BOWL (AKW-081)</b></h2>
+                                      
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-box1">
+                            <div class="flip-box-inner1">
+                                <div class="flip-box-front1">
+                                    <img src="images/AKW 082.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                    <h1 style="color: black;"><b> PET BOWL ECONOMY PLAIN</b></h1>
+                                    <h2 style="color: blueviolet;"><b>AKW-082</b></h2>
+                                </div>
+                                <div class="flip-box-back1">
+                                    <h2><b>PET BOWL ECONOMY PLAIN (AKW-002)</b></h2>
+
+                                      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-box1">
+                            <div class="flip-box-inner1">
+                                <div class="flip-box-front1">
+                                    <img src="images/AKW 083.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                    <h1 style="color: black;"><b> PET BOWL ECONOMY EMBOSSED</b></h1>
+                                    <h2 style="color: blueviolet;"><b>AKW-083</b></h2>
+                                </div>
+                                <div class="flip-box-back1">
+                                    <h2><b>PET BOWL ECONOMY EMBOSSED (AKW-083)</b></h2>
+
+                                      
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img src="images/AKW" alt="Paris" style="width:300px;height:200px; ">
+                                    <h1 style="color: black;"><b> PET BOWL ECONOMY EMBOSSED & COLOUR</b></h1>
+                                    <h2 style="color: blueviolet;"><b>AKW-084</b></h2>
+                                </div>
+                                <div class="flip-box-back">
+                                    <h2><b>PET BOWL ECONOMY EMBOSSED & COLOUR (AKW-084)</b></h2>
+
+                                      
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-box1">
+                            <div class="flip-box-inner1">
+                                <div class="flip-box-front1">
+                                    <img src="images/AKW8" alt="Paris" style="width:300px;height:200px; ">
+                                    <h1 style="color: black;"><b> PET BOWL ECONOMY COLOUR PRINTED</b></h1>
+                                    <h2 style="color: blueviolet;"><b>AKW-085</b></h2>
+                                </div>
+                                <div class="flip-box-back1">
+                                    <h2><b>PET BOWL ECONOMY COLOUR PRINTED (AKW-085)</b></h2>
+
+                                      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-box1">
+                            <div class="flip-box-inner1">
+                                <div class="flip-box-front1">
+                                    <img src="images/AKW86.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                    <h1 style="color: black;"><b> ANTI SKID PET BOWL ECONOMY</b></h1>
+                                    <h2 style="color: blueviolet;"><b>AKW-086</b></h2>
+                                </div>
+                                <div class="flip-box-back1">
+                                    <h2><b>ANTI SKID PET BOWL ECONOMY (AKW-086)</b></h2>
+
+                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+    </section>
+
+    <section>
+        <div class="clothes_main section " style="background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 087.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> ANTI SKID PET BOWL ECONOMY HAMMERD</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-087</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>ANTI SKID PET BOWL ECONOMY HAMMERD (AKW-087)</b></h2>
+                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 088.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> ANTI SKID PET BOWL ECONOMY COLOUR PRINTED</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-088</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>ANTI SKID PET BOWL ECONOMY COLOUR PRINTED (AKW-088)</b></h2>
+
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 089.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> PET BOWL ECONOMY OUT SIDE MAT ON PRINT</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-089</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>PET BOWL ECONOMY OUT SIDE MAT ON PRINT (AKW-089)</b></h2>
+
+                                  
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 090.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOUBLE DRINNER H BASE</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-090</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>DOUBLE DRINNER H BASE (AKW-090)</b></h2>
+
+                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW9" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> SOLID DOUBLE DRINNER COLOUR(MS)</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-091</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>SOLIED DOUBLE DRINNER COLOUR(MS) (AKW-091)</b></h2>
+
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 092.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> SOLIED DOUBLE DRINNER</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-092</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>SOLIED DOUBLE DRINNER (AKW-092)</b></h2>
+
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="clothes_main section " style="background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 093.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOUBLE DRINNER WIRE STAND</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-093</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>DOUBLE DRINNER WIRE STAND (AKW-093)</b></h2>
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 094.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOG BOWL REGULAR</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-094</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>DOG BOWL REGULAR (AKW-094)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 095.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOG BOWL REGULAR ONE SIDE WINDOW</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-095</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>DOG BOWL REGULAR ONE SIDE WINDOW (AKW-095)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 096.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOG BOWL REGULAR EMBOSSED</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-096</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>DOG BOWL REGULAR EMBOSSED (AKW-096)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 097.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOG BOWL REGULAR SIDE HAMMERD</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-097</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>DOG BOWL REGULAR SIDE HAMMERD (AKW-097)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 098.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOG BOWL REGULAR COLOURED</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-098</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>DOG BOWL REGULAR COLOURED (AKW-098)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    
+    </section>
+    
+    <section>
+        <div class="clothes_main section " style="background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 099.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOG BOWL REGULAR COLOUR WITH SILVER TUCH</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-099</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>DOG BOWL REGULAR COLOUR WITH SILVER TUCH (AKW-099)</b></h2>
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 100.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOG BOWL BELLY COLOUR WITH ONE SIDE WINDOW</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-100</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>DOG BOWL BELLY COLOUR WITH ONE SIDE WINDOW (AKW-100)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 101.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOG BOWL BELLY EMBOSSED</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-101</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>DOG BOWL BELLY EMBOSSED (AKW-101)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 102.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> DOUBLE DRINNER H BASE</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-102</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>DOUBLE DRINNER H BASE (AKW-102)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 103.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> SLOW FIDDER</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-103</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>SLOW FIDDER (AKW-103)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 104.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> BROAD RIM DOG BOWL</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-104</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>BROAD RIM DOG BOWL (AKW-104)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    
+    </section>
+
+    <section>
+        <div class="clothes_main section " style="background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 105.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> LONG EAR DOG BOWL HAMMERD</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-105</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>LONG EAR DOG BOWL HAMMERD (AKW-105)</b></h2>
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 106.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> LONG EAR DOG BOWL PYRAMID SHAPE</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-106</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>LONG EAR DOG BOWL PYRAMID SHAPE (AKW-106)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 107.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> PUPPY SOUCER</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-107</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>PUPPY SOUCER (AKW-107)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 108.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> ANTI SKID HEAVY DISH</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-108</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>ANTI SKID HEAVY DISH (AKW-108)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 109.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> ANTI SKID HEAVY DISH COLOUR </b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-109</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>ANTI SKID HEAVY DISH COLOUR (AKW-109)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 110.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> ANTI SKID HEAVY DISH COLOUR WITH PRINT</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-110</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>ANTI SKID HEAVY DISH COLOUR WITH PRINT (AKW-110)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    
+    </section>
+    
+    <section>
+        <div class="clothes_main section " style="background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 111.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> HEAVY DISH HAMMERD</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-111</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>HEAVY DISH HAMMERD (AKW-111)</b></h2>
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 112.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> HEAVY DISH HAMMERD COLOUR</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-112</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>HEAVY DISH HAMMERD COLOUR (AKW-112)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 113.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> HEAVY DISH COLOUR WITH PRINT </b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-113</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>HEAVY DISH COLOUR WITH PRINT(AKW-113)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 114.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> COOP CUP WITH HANGER </b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-114</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>COOP CUP WITH HANGER (AKW-114)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 115.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> EXTRA DEEP DOG BOWL</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-115</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>EXTRA DEEP DOG BOWL (AKW-115)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 116.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> PET STORAGE BOWL</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-116</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>PET STORAGE BOWL (AKW-116)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    
+    </section>
+
+    <section>
+        <div class="clothes_main section " style="background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW117" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> PET STORAGE BOWL</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-117</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>PET STORAGE BOWL (AKW-117)</b></h2>
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 118.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> ANTI SKID HEAVY DISH WITH MATCHING PRINT</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-118</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>ANTI SKID HEAVY DISH WITH MATCHING PRINT (AKW-118)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 119.png" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> ANTI ANT DOG BOWL </b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-119</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>ANTI ANT DOG BOWL (AKW-119)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="images/AKW 120.webp" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> ANTI SKID HEAVY CAT PLATER</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-120</b></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <h2><b>ANTI SKID HEAVY CAT PLATER (AKW-084)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 121.jpg" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> HEAVY DISH PLAIN</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-121</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>HEAVY DISH PLAIN (AKW-121)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-box1">
+                        <div class="flip-box-inner1">
+                            <div class="flip-box-front1">
+                                <img src="images/AKW 122.png" alt="Paris" style="width:300px;height:200px; ">
+                                <h1 style="color: black;"><b> PAIL BUCKET</b></h1>
+                                <h2 style="color: blueviolet;"><b>AKW-122</b></h2>
+                            </div>
+                            <div class="flip-box-back1">
+                                <h2><b>PAIL BUCKET (AKW-122)</b></h2>
+    
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    
+    </section>
+    
+    
+    <div id="footer" class="Address layout_padding">
+       <div class="container">
+          <div class="row">
+             <div class="col-sm-12">
+               <div class="titlepage">
+                  <div class="main">
+                     <h1 class="address_text">Address</h1>
+                  </div>
+               </div>
+             </div>
+          </div>
+               <div class="address_2">
+                  <div class="row">
+                     <div class="col-sm-12 col-md-12 col-lg-4">
+                       <div class="site_info">
+                          <span class="info_icon"><img src="images/map-icon.png" /></span>
+                          <span style="margin-top: 10px;">A-3/41, Rohini Sector-16, New Delhi-110089</span></div>
+                     </div>
+                     <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="site_info">
+                           <span class="info_icon"><img src="images/map-icon.png" /></span>
+                           <span style="margin-top: 10px; ">Workspace: Wazirpur industrial Area </span>
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-md-12 col-lg-4">
+                       <div class="site_info">
+                          <span class="info_icon"><img src="images/phone-icon.png" /></span>
+                          <span style="margin-top: 21px;">( +91 9990090939 )</span></div>
+                     </div>
+                     <div class="col-sm-12 col-md-12 col-lg-4">
+                       <div class="site_info">
+                          <span class="info_icon"><img src="images/email-icon.png" /></span>
+                          <span style="margin-top: 21px;">Aashnikitchenware@gmail.com</span></div>
+                     </div>
+                     </div> 
+                  </div>
+               </div>
+                  
+       </div>
+    </div>
+
+
+    <!-- footer start-->
+    <div class="copyright_text">
+        <div id="plant" class="footer layout_padding">
+            <div class="container">
+                <p style="font-size: medium; color: #000;">Copyright © 2021 Aashni Kitchenware | All Rights
+                    Reserved.</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+            $(".zoom").hover(function () {
+
+                $(this).addClass('transition');
+            }, function () {
+
+                $(this).removeClass('transition');
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
